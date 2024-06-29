@@ -10,3 +10,5 @@ fileter-branch(커밋이력 지우기) 기능 테스트를 위한 저장소
 
 작업을 진행한다고 가정하기 위한 샘플 커밋
 계속 작업 진행중!!
+
+git filter-branch -f --index-filter "git rm --cached --ignore-unmatch ./src/key.txt" --prune-empty -- --all
